@@ -12,9 +12,21 @@ import java.util.HashSet;
 public class Main {
 
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Lion lion = new Lion();
-        System.out.println(cat.isCanEatPerson());
-        System.out.println(lion.isCanEatPerson());
+        MyArrayList emp = getEmployees();
+        emp.add("James");
+        emp.remove("Emma");
+        for (int i = 0; i < emp.getSize(); i++) {
+            System.out.println(emp.get(i));
+        }
+    }
+
+    private static MyArrayList getEmployees() {
+        MyArrayList employees = new MyArrayList();
+        employees.add("John");
+        employees.add("Olivia");
+        employees.add("Emma");
+        employees.add("Max");
+        employees.add("Nick");
+        return employees;
     }
 }

@@ -20,7 +20,7 @@ public class MyMath {
         return PI * radius * radius;
     }
 
-    public int multiple(int a, int b) {
+    public static int multiple(int a, int b) {
         return a * b;
     }
 

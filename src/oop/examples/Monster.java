@@ -6,29 +6,29 @@ public class Monster {
     int arms;
     int legs;
 
-    Monster() {
+    public Monster() {
         this(2);
     }
 
-    Monster(int quantity) {
+    public Monster(int quantity) {
         this(quantity, quantity, quantity);
     }
 
-    Monster(int eye, int arm, int leg) {
+    public Monster(int eye, int arm, int leg) {
         this.eyes = eye;
         this.arms = arm;
         this.legs = leg;
     }
 
-    void voice() {
-        voice(1, "Grrrrrrr...");
+    public void voice() {
+        voice(1);
     }
 
-    void voice(int count) {
+    public void voice(int count) {
         voice(count, "Grrrrrrr...");
     }
 
-    void voice(int count, String word) {
+    public void voice(int count, String word) {
         for (int i = 0; i < count; i++) {
             System.out.println(word);
         }
