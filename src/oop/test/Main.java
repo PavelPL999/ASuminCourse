@@ -12,21 +12,14 @@ import java.util.HashSet;
 public class Main {
 
     public static void main(String[] args) {
-        MyArrayList emp = getEmployees();
-        emp.add("James");
-        emp.remove("Emma");
-        for (int i = 0; i < emp.getSize(); i++) {
-            System.out.println(emp.get(i));
-        }
-    }
+        String s1 = "1000";
+        String s2 = "2000";
+        System.out.println(s1 + s2);
+        System.out.println(Integer.parseInt(s1) + Integer.parseInt(s2));
 
-    private static MyArrayList getEmployees() {
-        MyArrayList employees = new MyArrayList();
-        employees.add("John");
-        employees.add("Olivia");
-        employees.add("Emma");
-        employees.add("Max");
-        employees.add("Nick");
-        return employees;
+        String s = "He is John. He is 27 years old.";
+
+        Person person = new Person(s.substring(6, 10), Integer.parseInt(s.substring(18, 20)));
+        System.out.println(person.getName() + " " + person.getAge());
     }
 }
