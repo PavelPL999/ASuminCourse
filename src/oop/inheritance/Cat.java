@@ -6,4 +6,10 @@ public class Cat extends CatFamily {
         super(4, 2, false);
         setLegs(5);
     }
+
+    @Override
+    public void eat() {
+        super.eat();
+        System.out.println("вискас");
+    }
 }

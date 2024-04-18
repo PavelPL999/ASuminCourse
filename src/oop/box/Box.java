@@ -58,4 +58,8 @@ public class Box {
     public void showVolume() {
         System.out.println(getVolume());
     }
+
+    public void showInfo() {
+        System.out.println("Width: " + width + " Length: " + length + " Height: " + height);
+    }
 }

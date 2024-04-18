@@ -35,4 +35,8 @@ public class CatFamily {
     public void setCanEatPerson(boolean canEatPerson) {
         this.canEatPerson = canEatPerson;
     }
+
+    public void eat() {
+        System.out.println("Кушаю");
+    }
 }
