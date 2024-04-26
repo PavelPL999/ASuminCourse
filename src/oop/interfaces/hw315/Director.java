@@ -1,9 +1,8 @@
 package oop.interfaces.hw315;
 
-public class Director implements  AbleToWork {
+public class Director {
 
-    @Override
-    public void work() {
-        System.out.println("Директор работает");
+    public void force(Worker worker) {
+        worker.work();
     }
 }

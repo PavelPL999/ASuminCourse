@@ -1,6 +1,6 @@
 package oop.interfaces.hw315;
 
-public class Programmist implements AbleToWork, AbleToDrive {
+public class Programmist extends Worker implements AbleToWork, AbleToDrive {
 
     @Override
     public void work() {
