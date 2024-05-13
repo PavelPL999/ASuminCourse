@@ -11,5 +11,12 @@ public class MainHW315 {
 
         director.force(worker);
         director.force(programmist);
+
+        director.force(new Worker() {
+            @Override
+            public void work() {
+                System.out.println("Работаю на благо Империума");
+            }
+        });
     }
 }
