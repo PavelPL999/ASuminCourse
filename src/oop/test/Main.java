@@ -1,19 +1,18 @@
 package oop.test;
 
-import oop.box.Box;
-import oop.box.WeightBox;
-import oop.inheritance.Rectangle;
-import oop.inheritance.Triangle;
-import oop.inheritance.TriangleRed;
+import oop.examples.Person;
+
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
-        Rectangle rect = new Rectangle(10, 20);
-        Triangle triangle = new Triangle(5, 5 , 8);
-        TriangleRed trRed = new TriangleRed(5,5,8);
-        rect.showPerimeter();
-        triangle.showPerimeter();
-        trRed.showPerimeter();
+        Person person = new Person("John", 17);
+        System.out.println(person); // здесь метод toString() вызывается не явно
+        System.out.println(person.toString()); // тут явно вызываем метод toString()
+
+        Random random = new Random(); // Random - спец.класс для генерирования случайных чисел
+        int number = random.nextInt(5, 11);
+        System.out.println(number);
     }
 }
